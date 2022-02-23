@@ -1,0 +1,38 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+
+<div id="carousel{data.uid}" class="carousel slide" data-ride="carousel" data-interval="{f:if(condition:data.tx_fkuslider_autoplay, then:data.tx_fkuslider_interval, else:'0')}">
+    <ol class="carousel-indicators">
+        <f:for each="{sliders}" as="slider" iteration="it">
+            <li data-target="#carousel{data.uid}" data-slide-to="{it.index}" class="{f:if(condition:it.isFirst,then:'active')}"></li>
+        </f:for>
+    </ol>
+	<div class="carousel-inner">
+		<f:for each="{sliders}" as="slider" iteration="it">
+			<div class="carousel-item {f:if(condition:it.isFirst,then:'active')}">
+            	<f:link.typolink parameter="{slider.data.link}">
+                    <f:image image="{slider.picture.0}" class="d-block w-100 img-fluid" alt="{slider.picture.0.title}" />
+                    <f:if condition="{slider.picture.0.title} || {slider.picture.0.description}">
+                        <div class="carousel-caption d-none d-md-block">
+                        	<f:if condition="{slider.picture.0.title}">
+	                            <h4>{slider.picture.0.title}</h4>
+                            </f:if>
+                            <f:if condition="{slider.picture.0.description}">
+	                            <p>{slider.picture.0.description}</p>
+                            </f:if>
+                        </div>
+                    </f:if>
+                </f:link.typolink>
+			</div>
+		</f:for>
+	</div>
+    <a class="carousel-control-prev" href="#carousel{data.uid}" role="button" data-slide="prev">
+    	<svg class="icon-md" fill="currentColor"><use xlink:href="fileadmin/icon/glyphicons-basic-223-chevron-left.svg#glyphicons-basic"/></svg>
+        <span class="sr-only">Zurück</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel{data.uid}" role="button" data-slide="next">
+    	<svg class="icon-md" fill="currentColor"><use xlink:href="fileadmin/icon/glyphicons-basic-224-chevron-right.svg#glyphicons-basic"/></svg>
+        <span class="sr-only">Weiter</span>
+    </a>
+</div>
+
+</html>

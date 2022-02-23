@@ -1,0 +1,31 @@
+tt_content.fku_slider = FLUIDTEMPLATE
+tt_content.fku_slider {
+	file = EXT:fku_slider/Resources/Private/Templates/Slider.html
+	dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+	dataProcessing.10 {
+		if.isTrue.field = tx_fkuslider_items
+		table = tx_fkuslider_domain_model_item
+		where {
+			data = field:uid
+			intval = 1
+			wrap = sliderid=|
+		}
+		orderBy = sorting
+		as = sliders
+		dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        dataProcessing.10 {
+           references.fieldName = picture
+		   references.table = tx_fkuslider_domain_model_item
+		   as = picture
+		   
+        }
+	}
+}
+
+old.tt_content {
+    fku_slider =< lib.contentElement
+    fku_slider {
+		templateRootPaths.10 = EXT:fku_slider/Resources/Private/Templates/
+        templateName = Slider
+    }
+}

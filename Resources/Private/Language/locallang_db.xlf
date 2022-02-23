@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2021-05-14T15:26:34Z" product-name="fku_slider">
+		<header/>
+		<body>
+			<trans-unit id="tt_content.tx_fkuslider_interval">
+				<source>Interval (milliseconds)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_fkuslider_autoplay">
+				<source>Autoplay</source>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_fkuslider_items">
+				<source>Slider items</source>
+			</trans-unit>
+			<trans-unit id="tx_fkuslider_domain_model_item">
+				<source>Slider item</source>
+			</trans-unit>
+			<trans-unit id="tx_fkuslider_domain_model_item.title">
+				<source>Internal title</source>
+			</trans-unit>
+			<trans-unit id="tx_fkuslider_domain_model_item.link">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="tx_fkuslider_domain_model_item.picture">
+				<source>Picture</source>
+			</trans-unit>
+			<trans-unit id="palette.access">
+				<source>Access</source>
+			</trans-unit>
+			<trans-unit id="palette.general">
+				<source>General</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2021-05-14T15:26:34Z" product-name="fku_slider">
+		<header/>
+		<body>
+			<trans-unit id="content_element_title">
+				<source>Slider</source>
+			</trans-unit>
+			<trans-unit id="content_element_desciption">
+				<source>Slider element with linked pictures to any pages</source>
+			</trans-unit>
+			<trans-unit id="tx_fkuslider_domain_model_item">
+				<source>Slider item</source>
+			</trans-unit>
+			<trans-unit id="tx_fkuslider_domain_model_item.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_fkuslider_domain_model_item.link">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="tx_fkuslider_domain_model_item.pciture">
+				<source>Picture</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
