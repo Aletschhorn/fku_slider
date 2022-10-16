@@ -6,7 +6,7 @@
 			<trans-unit id="content_element_title">
 				<source>Slider</source>
 			</trans-unit>
-			<trans-unit id="content_element_desciption">
+			<trans-unit id="content_element_description">
 				<source>Slider element with linked pictures to any pages</source>
 			</trans-unit>
 			<trans-unit id="tx_fkuslider_domain_model_item">

@@ -3,7 +3,7 @@ mod.wizards.newContentElement.wizardItems {
    plugins {
       elements {
          fku_slider {
-            iconIdentifier = EXT:fku_slider/Resources/Public/Icons/tx_fkuslider_domain_model_slider.gif
+            iconIdentifier = fku-slider
             title = LLL:EXT:fku_slider/Resources/Private/Language/locallang.xlf:content_element_title
             description = LLL:EXT:fku_slider/Resources/Private/Language/locallang.xlf:content_element_description
             tt_content_defValues {
@@ -11,6 +11,5 @@ mod.wizards.newContentElement.wizardItems {
             }
          }
       }
-      show := addToList(fku_slider)
    }
 }
